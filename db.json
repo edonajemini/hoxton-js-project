@@ -1,0 +1,104 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "make": "XJ6",
+      "name": "Jaguar",
+      "image": "https://i.pinimg.com/originals/9b/b3/76/9bb376bbf015df989f41e3a1c628d7db.png",
+      "price": 15000,
+      "year": "1990",
+      "bodytype": "sedan",
+      "fuel": "gasoline"
+    },
+    {
+      "id": 2,
+      "make": "S",
+      "name": "Tesla",
+      "image": "https://tesla-cdn.thron.com/delivery/public/image/tesla/03c34975-991c-45ee-a340-2b700bf7de01/bvlatuR/std/960x540/meet-your-tesla_model-s",
+      "price": 20000,
+      "year": "2020",
+      "bodytype": "sedan",
+      "fuel": "electric"
+    },
+    {
+      "id": 3,
+      "type": "Supra",
+      "name": "Toyota",
+      "image": "https://e7.pngegg.com/pngimages/937/33/png-clipart-white-toyota-camry-xv40-2011-toyota-camry-2009-toyota-camry-2010-toyota-camry-se-car-toyota-car-front-miscellaneous-compact-car-thumbnail.png",
+      "price": 13000,
+      "year": "1998",
+      "bodytype": "coupe",
+      "fuel": "gasoline"
+    },
+    {
+      "id": 4,
+      "type": "AudiRS6",
+      "name": "Audi",
+      "image": "https://www.motorbiscuit.com/wp-content/uploads/2021/06/2021-Audi-A4-1-1024x768.jpg",
+      "price": 17000,
+      "year": "2018",
+      "bodytype": "station wagon",
+      "fuel": "gasoline"
+    },
+    {
+      "id": 5,
+      "type": "Vogue",
+      "name": "Range Rover",
+      "image": "https://purepng.com/public/uploads/large/purepng.com-white-range-rover-carcarvehicletransportland-rover-961524668735rkbjr.png",
+      "price": 22000,
+      "year": "2019",
+      "bodytype": "cabriolet",
+      "fuel": "gasoline"
+    },
+    {
+      "id": 6,
+      "type": "911",
+      "name": "Porsche",
+      "image": "https://images.hgmsites.net/lrg/2020-porsche-911-carrera-4s-coupe-angular-front-exterior-view_100737975_l.jpg",
+      "price": 1400,
+      "year": "2015",
+      "bodytype": "SUV",
+      "fuel": "diesel"
+    },
+    {
+      "id": 7,
+      "type": "V90",
+      "name": "Volvo",
+      "image": "https://www.pngkey.com/png/full/186-1860534_volvo-xc90-company-car-front-view.png",
+      "price": 9000,
+      "year": "2017",
+      "bodytype": "station wagon",
+      "fuel": "diesel"
+    },
+    {
+      "id": 8,
+      "type": "GTR",
+      "name": "Nissan",
+      "image": "https://imgd-ct.aeplcdn.com/1056x660/n/nu0jpra_1422360.jpg?q=75",
+      "price": 7800,
+      "year": "2017",
+      "bodytype": "coupe",
+      "fuel": "gasoline"
+    },
+    {
+      "id": 9,
+      "type": "Wrangler",
+      "name": "JEEP",
+      "image": "https://imgd.aeplcdn.com/0x0/n/cw/ec/54437/2021-wrangler-exterior-right-front-three-quarter.jpeg",
+      "price": 15000,
+      "year": "2013",
+      "bodytype": "SUV",
+      "fuel": "gasoline"
+    },
+    {
+      "id": 10,
+      "type": "SL",
+      "name": "Mercedes-Benz",
+      "image": "https://images2.alphacoders.com/552/552276.jpg",
+      "price": 14000,
+      "year": "1995",
+      "bodytype": "cabriolet",
+      "fuel": "gasoline"
+    }
+  ]
+}

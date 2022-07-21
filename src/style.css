@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: grid;
+  grid-template:
+    "header header header" auto
+    "main main sidebar" auto
+    "main main sidebar" 1fr/
+    1fr 1fr 1fr;
+}
+
+/* header area */
+
+header {
+  grid-area: header;
+  padding: 10px;
+  background-color: black;
+}
+
+.the-logo {
+  display: flex;
+  text-decoration: none;
+  color: rgb(214, 214, 214);
+  font-size: 1.5em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  cursor: pointer;
+}
+
+header nav {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.left-side-nav {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 15px;
+}
+
+.left-side-nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.left-side-nav-links li {
+  list-style: none;
+}
+.left-side-nav-links a {
+  text-decoration: none;
+  color: blue;
+  font-size: 1.2rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.right-side-nav {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: end;
+  align-items: center;
+  gap: 50px;
+}
+
+.right-side-nav li {
+  list-style: none;
+}
+.right-side-nav li span {
+  font-size: 1.6rem;
+  color: white;
+}
+.material-symbols-outlined-shopping-bag{
+  color: black;
+}
+
+main {
+  position: relative;
+  grid-area: main;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.store-item {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+}
+.store-item:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.search-bar {
+  cursor: pointer;
+}
+
+.selected-item {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 70px;
+}
+.selected-item-info {
+  padding-top: 50px;
+  display: grid;
+  grid-template-rows: 100px 200px auto;
+  align-items: start;
+}
+
+.selected-item-name {
+  font-size: 30px;
+  font-family: Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgba(0, 0, 0, 0.561);
+}
+
+.selected-item-price {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+  font-size: 2rem;
+  font-family: "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+}
+.selected-item-price-alone {
+  text-decoration-line: line-through;
+}
+
+
+.modal-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(104, 102, 102, 0.462);
+  padding: 2rem;
+  display: grid;
+  place-content: center;
+}
+
+.modal-container {
+  background-color: white;
+  padding: 3rem;
+  position: relative;
+  border-radius: 10px;
+  display: grid;
+  gap: 40px;
+  place-items: center;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  border: unset;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+.modal-search {
+  display: grid;
+  grid-gap: 20px;
+  place-items: center;
+}
+.modal-search h2 {
+  font-size: 2rem;
+  font-family: "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: black;
+}
+.modal-search input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(119, 119, 119);
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-family: "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+
+.sidebar {
+  display: grid;
+  place-items: center;
+  gap: 25px;
+  font-size: 1.2rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: black;
+  margin: 20px;
+  border: thin solid black;
+  padding: 10px;
+  border-radius: 5px;
+}
+.sidebar input{
+  width: 50%;
+  height: 30px;
+  margin:5px;
+}
+.sidebar button {
+  all: unset;
+  border: 1px solid rgb(119, 119, 119);
+  border-radius: 10px;
+  width: 20%;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-family: "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  background-color: white;
+  cursor: pointer;
+  color: black;
+  margin: 20px;
+}
